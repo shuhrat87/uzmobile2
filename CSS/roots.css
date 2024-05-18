@@ -1,0 +1,19 @@
+/* colors */
+:root{
+    --primary-color:rgba(255, 255, 255, 1) ;
+    --body-primary-color: rgba(246, 246, 246, 1);
+    --title-primary-color:rgba(0, 0, 0, 1);
+    --title-secondary-color:;
+    --txt-primary-color:;
+    --txt-secondary-color:;
+    --btn-primary-color:rgba(0, 215, 74, 1);
+}
+/* colors */
+
+/* fonts */
+:root{
+
+--primary-font:"SF-pro-Display";
+
+}
+/* fonts */

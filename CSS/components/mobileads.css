@@ -1,0 +1,74 @@
+
+.mobileads> .container{
+    display: flex;
+    gap:clamp(14px,5vw,50px);
+}
+
+.mobileads__list{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mobileads__list2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.mobileads__link{
+    padding: 20px 0;
+    display: flex;
+    color: var(--title-primary-color);
+    font-size:clamp(14px,5vw,25px); 
+    font-weight: 500;
+    transition: 0.4s;
+    position: relative;
+    
+    &::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background: var( --btn-primary-color);
+        position: absolute;
+        bottom: 0;
+        transition: 0.4s;
+    }
+    
+    &:hover::after{
+        width: 100%;
+    }
+    &:hover{
+        color: var(--btn-primary-color);
+    }
+}
+
+.mobileads__link2{
+    display: flex;
+    padding: 20px 0;
+    gap: 5px;
+    color: var(--title-primary-color);
+    font-size:clamp(14px,5vw,25px);  
+    font-weight: 500;
+    transition: 0.4s;
+    
+    position: relative;
+    
+    &::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background: var( --btn-primary-color);
+        position: absolute;
+        bottom: 0;
+        transition: 0.4s;
+    }
+    
+    &:hover::after{
+        width: 100%;
+    }
+    &:hover{
+        color: var(--btn-primary-color);
+    }
+    
+    
+}

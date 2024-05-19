@@ -1,5 +1,78 @@
-.header{
-    background:rgba(71, 84, 99, 1) ;
-    max-width: 100%;
-    min-height: 500px;
+.header {
+    background: rgba(71, 84, 99, 1);
+    width: 100%;
+    min-height: 400px;
+}
+
+.header>.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header__box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(25px,5vw,42px);
+    width: 100%;
+    
+}
+
+.header__box-img {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    max-width: 594px;
+    position: relative;
+    z-index: 2;
+}
+
+.header__box-subtract {
+    position: absolute;
+    top: 9%;
+    left: 28%;
+    z-index: 3;
+}
+
+.header__title {
+    font-size:clamp(25px,5vw,52px) ;
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 126%;
+}
+
+.header__box-cards {
+    display: flex;
+    gap:clamp(30px,5vw,60px);
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.header__box-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__mb {
+    font-size:clamp(24px,5vw,32px) ; 
+    color: var(--btn-primary-color);
+    font-weight: 700;
+}
+
+.card__txt {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+
+}
+
+.header__btn {
+    padding: 21px 42px;
+    color: var(--primary-color);
+    background: var(--btn-primary-color);
+    font-size: 24px;
+    border-radius: 10px;
+    font-weight: 500;
+    max-width: 233px;
 }

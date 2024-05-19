@@ -1,25 +1,25 @@
 
 .mobileads> .container{
     display: flex;
-    gap:clamp(14px,5vw,50px);
+    gap:clamp(14px,2vw,50px);
 }
 
 .mobileads__list{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-direction: column;
 }
 
 .mobileads__list2{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-direction: column;
 }
 .mobileads__link{
-    padding: 20px 0;
+    padding: 5px 0;
     display: flex;
     color: var(--title-primary-color);
-    font-size:clamp(14px,5vw,25px); 
+    font-size:clamp(14px,2vw,25px); 
     font-weight: 500;
     transition: 0.4s;
     position: relative;
@@ -44,15 +44,14 @@
 
 .mobileads__link2{
     display: flex;
-    padding: 20px 0;
+    padding: 5px 0;
     gap: 5px;
     color: var(--title-primary-color);
-    font-size:clamp(14px,5vw,25px);  
+    font-size:clamp(14px,2vw,25px);  
     font-weight: 500;
     transition: 0.4s;
-    
     position: relative;
-    
+    z-index: 100;
     &::after{
         content: "";
         width: 0;

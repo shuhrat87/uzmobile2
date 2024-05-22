@@ -45,3 +45,7 @@ button,input,textarea{
     background: var( --btn-primary-color);
     max-width: fit-content;
  }
+ 
+ main{
+    background: rgb(181 173 175 / 13%);
+ }

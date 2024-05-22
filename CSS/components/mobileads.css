@@ -1,19 +1,21 @@
 
-.mobileads> .container{
+.mobileads> .content{
     display: flex;
     gap:clamp(14px,2vw,50px);
 }
 
 .mobileads__list{
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
+    padding: 20px 15px;
 }
 
 .mobileads__list2{
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
+    padding: 20px 15px;
 }
 .mobileads__link{
     padding: 5px 0;
@@ -51,7 +53,7 @@
     font-weight: 500;
     transition: 0.4s;
     position: relative;
-    z-index: 100;
+    z-index: 98;
     &::after{
         content: "";
         width: 0;

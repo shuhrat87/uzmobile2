@@ -30,7 +30,7 @@ button,input,textarea{
 }
 
 .title{
-    font-size:clamp(25px,5vw,40px) ; 
+    font-size:clamp(20px,2vw,40px) ; 
     color: var(--title-primary-color);
     line-height:clamp(30px,5vw,47px);
     font-weight: 700;

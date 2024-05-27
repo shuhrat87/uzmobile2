@@ -212,3 +212,31 @@
     color: var(--title-primary-color);
     text-align: center;
 }
+
+.item2{
+    @media(width < 768px){
+       display: none;
+       
+       
+       }
+}
+
+.services__mobile-btn{
+    display: none;
+    
+    @media(width < 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: unset;  
+        width: 100%;
+        padding: 16px 0;
+        transition: 0.4s;
+        
+        }
+        
+       
+}
+.services__mobile-btn:hover .item2{
+    display: flex;
+}

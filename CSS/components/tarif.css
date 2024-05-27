@@ -1,6 +1,248 @@
+.tarif > .container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 
-
-.tarif__title{
-    padding: 150px 0 30px;
+.tarif__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 134px 0 30px;
 } 
+.tarif__subtitle{
+    font-size:clamp(18px,2vw,24px);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: var(--title-primary-color);
+        position: absolute;
+        bottom: 20%;
+        transition: 0.4s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+}
+
+.tarif__box-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(591px,1fr));
+   gap: 16px;
+   
+   @media(width < 680px){
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+   }
+}
+
+.tarif__box-card-content{
+padding: 42px 35px 22px;
+
+
+@media(width < 768px){
+    padding: 32px 25px 20px;
+}
+}
+
+.tarif__box-card{
+    background: var( --primary-color);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 2px 0px rgba(188, 188, 188, 0.25);
+
+}
+
+.tarif__box-img{
+  position: absolute;
+   top: 19%;
+   left: 11%;
+   max-width: 141px;
+   z-index: -1;
+   
+   @media(width < 768px){
+   width: 56px;
+   top: 7%;
+}
+@media(width < 768px){
+    
+    left:7% ;
+ }
+   
+}
+
+.tarif__box-box{
+    display: flex;
+    justify-content: end;
+    gap: 155px;
+    
+    @media(width < 768px){
+        gap: 35px;
+    }
+    
+    
+}
+
+.tarif__box-box-title{
+    font-size: clamp(20px,2vw,32px);
+    font-weight: 600;
+    color: var(--title-primary-color);
+    line-height: 38px;
+}
+
+.tarif__box-box-btn{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: var(--title-primary-color);
+    padding: 4px 12px;
+    border-radius: 10px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.tarif__box-zvonok{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 48px 0 36px;
+    position: relative;
+    
+    @media(width < 768px){
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: var(--title-primary-color);
+        position: absolute;
+        bottom: 0;
+        transition: 0.4s;
+        opacity: 10%;
+
+    }
+}
+
+.tarif__box-zvonok-box{
+    display: flex;
+    gap: 10px;
+}
+
+.tarif__box-zvonok-txt{
+    font-size: 18px;
+    font-weight: 500;
+    color: var( --title-primary-color);
+}
+
+.tarif__box-box2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 26px;
+}
+
+.tarif__box-box3{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tarif__box-box2-btns{
+    display: flex;
+    gap: 16px;
+}
+.tarif__box-box3-txt1{
+    font-size:clamp(18px,2vw,24px);
+    line-height: 24px;
+    font-weight: 800;
+    color: var( --title-primary-color);
+}
+
+.tarif__box-box3-txt2{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var( --title-primary-color);
+}
+
+.tarif__box-box2-btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 41px;
+    border: 1px solid var( --title-primary-color);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--title-primary-color);
+    max-width: 140px;
+    
+    @media(width < 768px){
+        font-size: 14px;
+    }
+}
+
+.tarif__box-box2-btn2{
+    display: flex;
+    align-items: center;
+    padding: 10px 21px;
+    border-radius: 10px;
+    background: var(--btn-primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    box-shadow: 0px 2px 2px 0px rgba(14, 221, 85, 0.52);
+
+    
+    @media(width < 768px){
+        display: none;
+    }
+}
+
+.spanbox1{
+    
+    @media(width < 768px){
+        display: none;
+    }
+    
+}
+
+.item3{
+    @media(width < 768px){
+       display: none;
+       
+       
+       }
+}
+
+.tarif__mobile-btn{
+    display: none;
+    
+    @media(width < 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: unset;  
+        width: 100%;
+        padding: 16px 0;
+        transition: 0.4s;
+        
+        }
+        
+       
+}

@@ -1,0 +1,35 @@
+.maps > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    
+    
+    @media(width < 768px){
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.select{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    @media(width < 768px){
+       background-color: #fff;
+       width: 100%;
+    }
+}
+
+.form__group{
+    @media(width < 768px){
+        width: 100%;
+     }
+}
+
+.maps> iframe{
+    display: block;
+}

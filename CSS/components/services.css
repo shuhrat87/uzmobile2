@@ -235,7 +235,9 @@
         
         }
         
-       
+        &:hover{
+            transform: translateY(5px);
+        }
 }
 .services__mobile-btn:hover .item2{
     display: flex;

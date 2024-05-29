@@ -110,6 +110,11 @@
     border-radius: 10px;
     font-weight: 500;
     max-width: 233px;
+    transition: 0.4s;
+    
+    &:hover{
+        transform: translateY(5px);
+    }
     
     @media(width < 992px){
       align-self: center;
